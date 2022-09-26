@@ -1,7 +1,7 @@
-import MainMenu from "./menus/MainMenu";
+import MainMenu from "../menus/MainMenu";
 import classes from "./LeftBanner.module.css";
-import MoreMenu from "./menus/MoreMenu";
-import UserCard from "../UserCard";
+import MoreMenu from "../menus/MoreMenu";
+import UserCard from "../../UserCard";
 import { Navbar } from "react-bootstrap";
 const LeftBanner = () => {
   return (

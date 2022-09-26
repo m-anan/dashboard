@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import LeftBanner from "../components/dashborad_components/LeftBanner";
+import LeftBanner from "../components/dashborad_components/LeftBanner/LeftBanner";
 import { Col, Row } from "react-bootstrap";
 import Header from "../components/dashborad_components/Header/Header";
 import CounterCards from "../components/dashborad_components/CounterCard/CounterCards";
-import TableUsers from "../components/dashborad_components/TableUsers";
+import TableUsers from "../components/dashborad_components/TableUsers/TableUsers";
 
 const Dashboard = () => {
   return (

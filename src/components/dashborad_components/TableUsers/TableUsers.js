@@ -1,7 +1,7 @@
 import { Table, Pagination, Modal, Button } from "react-bootstrap";
 import classes from "./TableUsers.module.css";
 import { useState, useEffect } from "react";
-import UserItem from "./UserItem";
+import UserItem from "../UserItem/UserItem";
 import Spinner from "react-bootstrap/Spinner";
 import axios from "axios";
 const TableUsers = () => {
