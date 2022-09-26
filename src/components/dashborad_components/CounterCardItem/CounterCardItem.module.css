@@ -1,0 +1,23 @@
+.card {
+    width: auto;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.number {
+    font-size: 40px;
+    margin: 0;
+}
+
+.card h5 {
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+.rightC {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}

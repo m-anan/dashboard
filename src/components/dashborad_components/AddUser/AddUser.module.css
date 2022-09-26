@@ -1,0 +1,19 @@
+.add {
+  width: 90%;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 2rem;
+
+}
+
+.actions {
+  text-align: center;
+}
+
+.btn {
+  background-color: #434BE5;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 30px;
+}

@@ -1,0 +1,23 @@
+.banner {
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+.banner h1 {
+    font-size: 25px;
+    margin-left: 0.5rem;
+}
+
+@media (max-width:768px) {
+    .banner {
+        position: inherit;
+        justify-content: start;
+        height: auto;
+    }
+}

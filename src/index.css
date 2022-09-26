@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #272727;
+  overflow-x: hidden;
+}
+.nav-link{
+  color: #313131 !important;
+ 
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #3B44D3 !important;
+  background-color: #d5d5e6 !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+ border: 0;
+  border-bottom: solid 2px !important;
+  border-color: #3b44d3 !important;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border: 0 !important;
+  border-bottom: solid 2px !important;
+  border-color: #3b44d3 !important;
+}
+.page-link{
+  color: #272727 !important;
+}
