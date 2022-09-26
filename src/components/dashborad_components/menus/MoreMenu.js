@@ -17,7 +17,7 @@ const MoreMenu = () => {
       </Nav.Link>
       <Nav.Link eventKey="/sittings">
         <FontAwesomeIcon icon={faSlidersH} className="me-2" />
-        Sittings
+        Settings
       </Nav.Link>
     </Nav>
   );

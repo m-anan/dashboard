@@ -38,8 +38,6 @@ const Header = () => {
           </Button>
         </Modal.Footer>
       </Modal>
-
-      <DashboardMenu></DashboardMenu>
     </Row>
   );
 };
