@@ -1,4 +1,3 @@
-import DashboardMenu from "../menus/DashboardMenu";
 import { Row, Col, Modal, Button } from "react-bootstrap";
 import classes from "./Header.module.css";
 import { useContext, useState } from "react";
@@ -25,7 +24,7 @@ const Header = () => {
         </button>
       </Col>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} backdrop="static" onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Add User</Modal.Title>
         </Modal.Header>

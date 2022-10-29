@@ -105,7 +105,7 @@ const Login = (props) => {
     formData.preventDefault();
     if (formIsValid) {
       await axios
-        .get("https://dashboard-affae-default-rtdb.firebaseio.com/admins.json")
+        .get("https://react-http-81033-default-rtdb.firebaseio.com/admins.json")
         .then((res) => {
           checkEmail(res.data, formData);
         })

@@ -17,7 +17,7 @@ const TableUsers = () => {
   const fetchUsers = async () => {
     setIsLoading(true);
     const res = await axios.get(
-      "https://dashboard-affae-default-rtdb.firebaseio.com/users.json"
+      "https://react-http-81033-default-rtdb.firebaseio.com/users.json"
     );
     const userData = [];
     for (const key in res.data) {
@@ -74,7 +74,7 @@ const TableUsers = () => {
   const userRemoveHandler = (id) => {
     axios
       .delete(
-        `https://dashboard-affae-default-rtdb.firebaseio.com/users/${id}.json`
+        `https://react-http-81033-default-rtdb.firebaseio.com/users/${id}.json`
       )
       .then(() => {
         setTitle("Delete user");
@@ -93,7 +93,7 @@ const TableUsers = () => {
   const userEditHandler = (id, items) => {
     axios
       .put(
-        `https://dashboard-affae-default-rtdb.firebaseio.com/users/${id}.json`,
+        `https://react-http-81033-default-rtdb.firebaseio.com/users/${id}.json`,
         items
       )
       .then(() => {

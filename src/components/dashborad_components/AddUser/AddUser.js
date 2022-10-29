@@ -84,7 +84,7 @@ const AddUser = (props) => {
 
   const { isValid: emailIsValid } = emailState;
   const { isValid: first_nameIsValid } = firstNameState;
-  const { isValid: last_nameIsValid } = firstNameState;
+  const { isValid: last_nameIsValid } = lastNameState;
   const { isValid: passwordIsValid } = passwordState;
 
   useEffect(() => {
@@ -142,7 +142,7 @@ const AddUser = (props) => {
     if (formIsValid) {
       await axios
         .post(
-          "https://dashboard-affae-default-rtdb.firebaseio.com/users.json",
+          "https://react-http-81033-default-rtdb.firebaseio.com/users.json",
           User
         )
         .then((res) => {
@@ -156,14 +156,14 @@ const AddUser = (props) => {
           setShow(true);
         });
       window.location.reload();
+    } else if (!first_nameIsValid) {
+      first_nameInputRef.current.focus();
+    } else if (!last_nameIsValid) {
+      last_nameInputRef.current.focus();
     } else if (!emailIsValid) {
       emailInputRef.current.focus();
     } else if (!passwordIsValid) {
       passwordInputRef.current.focus();
-    } else if (!first_nameIsValid) {
-      first_nameInputRef.current.focus();
-    } else {
-      last_nameInputRef.current.focus();
     }
   };
 
@@ -226,7 +226,7 @@ const AddUser = (props) => {
           />
 
           <div className={classes.actions}>
-            <button type="SUBMIT" className={classes.btn}>
+            <button type="submit" className={classes.btn}>
               Add
             </button>
             {props.children}
